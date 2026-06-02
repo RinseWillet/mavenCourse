@@ -3,6 +3,6 @@ package guru.springframework.intellij;
 public class HelloFromJetbrains {
 
 	public String sayHello(){
-		return "Hello from JetBrains! BRO :-D";
+		return "Hello from JetBrains! WRAAAAA";
 	}
 }
