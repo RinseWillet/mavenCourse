@@ -1,20 +1,22 @@
 package guru.springframework.model;
 
 /**
- * Created by jt on 2018-12-09.
+ * Created by jt on 2018-12-09, adjusted by RW 2-6-2026
  */
 public class UserCommand {
     private String firstName;
     private String lastName;
     private String email;
+    private String favoriteColor;
 
     public UserCommand() {
     }
 
-    public UserCommand(String firstName, String lastName, String email) {
+    public UserCommand(String firstName, String lastName, String email, String favoriteColor) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.favoriteColor = favoriteColor;
     }
 
     public String getFirstName() {
@@ -40,4 +42,8 @@ public class UserCommand {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getFavoriteColor() { return favoriteColor; }
+
+    public void setFavoriteColor(String favoriteColor) { this.favoriteColor = favoriteColor; }
 }

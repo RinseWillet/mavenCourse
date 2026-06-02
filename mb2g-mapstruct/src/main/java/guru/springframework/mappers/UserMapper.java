@@ -5,9 +5,6 @@ import guru.springframework.model.UserCommand;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-/**
- * Created by jt on 2018-12-09.
- */
 @Mapper
 public interface UserMapper {
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);

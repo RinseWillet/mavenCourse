@@ -8,14 +8,16 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
+    private String favoriteColor;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, String email) {
+    public User(String firstName, String lastName, String email,  String favoriteColor) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.favoriteColor = favoriteColor;
     }
 
     public String getFirstName() {
@@ -41,4 +43,10 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getFavoriteColor() {
+        return favoriteColor;
+    }
+
+    public void setFavoriteColor(String favoriteColor) { this.favoriteColor = favoriteColor; }
 }
