@@ -5,8 +5,9 @@ package guru.springframework;
  */
 public class JavaHelloWorld {
 
+    public static final String MESSAGE = "Ik wordt het nu beu - Hallo wrede wereld!";
     public String getHello(){
-        return "Hello World";
+        return MESSAGE;
     }
 
 }

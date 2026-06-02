@@ -5,15 +5,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class JavaHelloWorldTest {
+class JavaHelloWorldTest {
 
 	@Test
-	public void testGetHello(){
+	void getHello() {
+		JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
 
-		JavaHelloWorld helloWorld = new JavaHelloWorld();
+		assertNotEquals("Hello World", javaHelloWorld.getHello());
 
-		assertEquals("Hello World", helloWorld.getHello());
-
-		assertNotEquals("Not Hello World", helloWorld.getHello());
+		assertEquals(javaHelloWorld.getHello(), javaHelloWorld.MESSAGE);
 	}
 }
